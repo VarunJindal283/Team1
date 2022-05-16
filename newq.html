@@ -282,4 +282,84 @@
 			</div>
 			
 		</div>
+		<script type="text/javascript">
+			var i=0;
+			var j= document.getElementById('points_text');
+			var o= document.getElementById('points_text2');
+			var l= document.getElementById('points_text3');
+			var m= document.getElementById('points_text4');
+			var n= document.getElementById('points_text5');
+			function wrong(x){
+				var z = x +'1';
+				var g = x +'2';
+				var k = document.getElementsByClassName(x);
+				var b1 = document.getElementById(z);
+				var b3 = document.getElementById(g);
+				var b2 = document.getElementById(x);
 	
+				
+				k.wop1.style.backgroundColor="red";
+				k.wop2.style.backgroundColor="red";
+				k.wop3.style.backgroundColor="red";
+				k.cop1.style.backgroundColor="green";
+				
+				j.innerHTML = "Your Points:"+i ;
+				b1.style.visibility="visible";
+				b2.style.visibility="hidden";
+				b3.style.visibility="visible";
+	
+	
+	
+				
+			}
+			function correct(y){
+				var z = y +'1';
+				var g = y +'2';
+				var k = document.getElementsByClassName(y);			
+				var b1 = document.getElementById(z);
+				var b3 = document.getElementById(g);
+				var b2 = document.getElementById(y);
+				k.wop1.style.backgroundColor="red";
+				k.wop2.style.backgroundColor="red";
+				k.wop3.style.backgroundColor="red";
+				k.cop1.style.backgroundColor="green";
+				
+				i= i+100 ;
+				j.innerHTML = "Your Points:"+i ;
+				l.innerHTML = "Your Points:"+i ;
+				o.innerHTML = "Your Points:"+i ;
+				n.innerHTML = "Your Points:"+i ;
+				m.innerHTML = "Your Points:"+i ;
+				b1.style.visibility="visible";
+				b2.style.visibility="hidden";
+				b3.style.visibility="visible";
+			}
+			function mag(w){
+				var qu = document.getElementById('Q_box_box');
+				var r = '-'+ w + '%';
+				qu.style.marginTop = r;
+				var sat = document.getElementById('start1');
+				sat.style.background="none";
+			}
+			function score(){
+				var las= document.getElementById('last1');
+				if(i>=400){
+					las.innerHTML=('Well Done');
+					las.style.marginLeft ="23%";
+					document.getElementById('poper').style.visibility ='visible';
+	
+				}
+				else if(i>=200){
+	
+					las.innerHTML=('You Need Some Improvement');
+	
+				}
+				else{
+					las.innerHTML=('Very Bad');
+					las.style.marginLeft ="25%";
+				}
+			}
+		</script>
+	
+	</body>
+	</html>
