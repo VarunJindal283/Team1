@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:rgb(223, 217, 217) ;
+    }
+nav {
+        border: solid 2px;
+        /* border-radius: 30px; */
+        background-color: white;
+    }
+    .navbar ul {
+        overflow: auto;
+        margin-left: 85px;
+    }
+    .navlogo {
+        /* outline: solid; */
+        float: left;
+        height: 60px;
+        width: 50px;
+        left: 50px;
+        top: 6px;
+        position: relative;
+    }
+    .navbarlocation {
+        float: left;
+        font-weight: bolder;
+        margin: 12px 0px;
+        font-size: 18px;
+        /* outline: solid; */
+    }
+    main{
+        background-color: white;
+        height: 140px;
+        width: 650px;
+        margin: 30px 150px;
+    }
+    article{
+        background-color: white;
+        height: 400px;
+        width: 650px;
+        margin: 30px 150px;
+    }
+    main h2{
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    main p{
+        position: relative;
+        left: 60px;
+        top: 10px;
+        font-size: 18px;
+        /* font-weight: bold; */
+    }
+    article h2{
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    #methods{
+        background-color: rgb(223, 217, 217);
+        float: left;
+        width: 250px;
+        height: 250px;
+        margin-left: 10px;
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    #method1{
+        padding: 15px 50px;
+    }
+    #method2{
+        padding: 12px 50px;
+        outline: solid 2px;
+    }
+    #newcard{
+        float: left;
+    }
+    #newcard img{
+        margin-top: 15px;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        margin: 9px 0px;
+    }
+    li button{
+        margin: 10px 80px;
+    }
+    
+</style>
+<script type = "text/javascript">
+    function Warn() {
+       alert ("Click on OK if you when to go to another page");
+       document.write ("Click on OK if you when to go to another page");
+    }
+</script>
+<body>
+    <nav class="navbar">
+        <div class="navlogo"><a href="../mid/mid.html" onclick = "Warn();"><img src="logooo1.png" alt="" height="60px" width="50px"></a></div>
+        <ul>
+            <div class="navbarlocation">SECURE PAYMENT</div>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Delivery Address and Time :</h2>
+        <p>Ashok Colony, Chandigarh <br><br>
+            30 Mins
+        </p>
+    </main>
+
+
+    <article>
+        <h2>Choose Payment Method : Add New Debit Card</h2>
+        <div id="methods">
+            <div id="method1">Wallets</div>
+            <div id="method2">Credit/Debit Cards</div>
+            <div id="method1">UPI</div>
+            <div id="method1">Net Banking</div>
+            <div id="method1">Food Cards</div>
+          </div>
+          <div id="newcard">
+              <img src="../payment gateway/We-Accept.png" alt="" width="350px">
+              <ul>
+                  <li>Card No. : <input type="number"></li>
+                  <li>Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"></li>
+                  <li>Expiry : &nbsp;&nbsp;&nbsp;&nbsp;<input type="date"></li>
+                  <li>CVV : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"></li>
+                  <li><button type="submit">Pay Securely</button></li>
+              </ul>
+
+          </div>
+    </article>
+</body>
+</html>
