@@ -142,5 +142,176 @@
 		
 	</style>
 </head>
+<body>
+	<div id="header_1">
+		<img  src="https://xp.io/storage/2OApv9xP.png">
+		<a href=""></a>
+		<a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/homePAGE.html"> Home</a>
+		
+		
+		
+		<a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/merchandise.html"> Merchandise</a>
 
+		<a href=""> Contact </a>
+		<a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/about-us.html">About us</a>
+		<a href=""></a>
+
+
+
+	</div>
+	<div id="box">
+		<div id="pro_img">
+			<img src="https://xp.io/storage/2BOEyDx.png" width="100%">
+		</div>
+		<div id="pro_dis">
+			<h1>Printed  Black Sweater</h1>
+			<h5><span>699/-</span>( Inclusive of all taxes )</h5>
+			<div id="size">
+				<button id="size2" onclick="col1();">S</button>
+				<button id="size3"onclick="col2();">M</button>
+				<button id="size4" onclick="col3();">L</button>
+				<button id="size5" onclick="col4();">XL </button>
+			</div><br>
+			<h>Fabric :Cotton wool blend </h><br>
+			<h>Care Instructions : Machine Wash </h><br>
+			<h>Fit Type : Regular </h><br><br>
+			<button id="bn"> <i>BUY NOW</i></button>
+
+
+
+			
+		</div>
+	</div>
+	<h1 style="color: white; margin-left:12% ;">Similar Product</h1>
+	<div id="opro2">
+		<button id="left" onclick="left()"></button>
+
+	<div id="opro1">
+
+	<div id="opro"> 
+		
+		<div id="prod_3">
+			<a href=""> <img src="https://xp.io/storage/2BOEyDx.png" id="prod_4"></a>
+			 <p> Printed Black Sweater</p>
+			 <p> 699/-</p>
+
+		</div>
+		<div id="prod_3">
+			<a href=""> <img src="https://xp.io/storage/2BS48IJ.png" id="prod_4" > </a>
+			<p> Printed Black T-Shirt</p>
+			<p> 499/-</p>
+		</div>
+		<div id="prod_3">
+			<a href=""> <img src="https://xp.io/storage/2BTG2AW.png" id="prod_4" > </a>
+			<p> Printed white T-Shirt</p>
+			<p> 499/-</p>
+		</div>
+		<div id="prod_3">
+			<a href=""> <img src="https://xp.io/storage/2BWwTK8.jpg" id="prod_4" > </a>
+			<p> Printed White Cap</p>
+			<p> 299/-</p>
+		</div>
+	
+
+	
+		<div id="prod_3">
+			<a href=""> <img src="https://xp.io/storage/2BXGaA5.jpg" id="prod_4"> </a>
+			 <p> Printed Black Cap</p>
+			 <p> 299/-</p>
+
+		</div>
+		<div id="prod_3">
+			<a href=""><img src="https://xp.io/storage/2C0nuyw.png" id="prod_4" ></a>
+			<p style="margin-top:10px;"> Printed Mug </p>
+			<p > 299/-</p>
+		</div>
+		<div id="prod_3">
+			<a href=""><img src="https://xp.io/storage/1G4L4nz.png" id="prod_4" ></a>
+			<p> Printed White Sweater</p>
+			<p> 699/-</p>
+		</div>
+		<div id="prod_3">
+			<a href=""><img src="https://xp.io/storage/1GaiBmF.png" id="prod_4" > </a>
+			<p> Printed White Sweater</p>
+			<p> 699/-</p>
+		</div>
+	</div>
+	
+</div>
+<button id="right" onclick="right()"></button>
+
+</div>
+	
+	<script type="text/javascript">
+		var a = document.getElementById('size2');
+		var b = document.getElementById('size3');
+		var c = document.getElementById('size4');
+		var d = document.getElementById('size5');
+		var op = document.getElementById('opro');
+		var i=0;
+	
+		function col1() {
+			a.style.backgroundColor = "orange";
+			b.style.backgroundColor ="white";
+			c.style.backgroundColor ="white";
+			d.style.backgroundColor ="white";
+			
+		}
+		function col2() {
+			a.style.backgroundColor = "white";
+			b.style.backgroundColor ="orange";
+			c.style.backgroundColor ="white";
+			d.style.backgroundColor ="white";
+			
+		}
+		function col3() {
+			a.style.backgroundColor = "white";
+			b.style.backgroundColor ="white";
+			c.style.backgroundColor ="orange";
+			d.style.backgroundColor ="white";
+			
+		}
+		function col4() {
+			a.style.backgroundColor = "white";
+			b.style.backgroundColor ="white";
+			c.style.backgroundColor ="white";
+			d.style.backgroundColor ="orange";
+			
+		}
+		function left(){
+			i= i+15;
+			if(i > -76 && i < 0){
+			var j= i+"%";
+			op.style.marginLeft = j;
+			console.log(j);}
+
+			else{
+				i= -65;
+
+				var k = i+"%";
+				op.style.marginLeft = k;
+				console.log(i);
+			}
+		}
+		function right(){
+			i= i-15;
+			if(i > -76 && i < 0){
+			var k = i+"%";
+			op.style.marginLeft = k;
+			console.log(i);}
+			else{
+				i=0;
+				
+				var k = i+"%";
+				op.style.marginLeft = k;
+				console.log(i);
+			}
+			
+			
+		}
+	</script>
+
+
+
+</body>
 </html>
